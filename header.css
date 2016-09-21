@@ -1,0 +1,420 @@
+h1 {
+	font-family: MaisonN_B;
+	font-size: 60px;
+	height: auto;
+	width: auto;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 60px 0px;
+}
+ #headerCont, #hbgr, #homeBtn, #footerCont, #footerRHS {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@font-face {font-family: MaisonN_B; src: url('../header/fonts/MaisonNeue-Bold.otf');}
+@font-face {font-family: champ-b; src: url('../header/fonts/champagne_limousinesbold.ttf');}
+
+#headerCont {
+	position: fixed;
+	left: 0px;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 100%;
+	height: 100px;
+	z-index: 1002;
+
+  	-webkit-box-shadow: 0 0px 11px rgb(193,193,193);
+  	-moz-box-shadow: 0 0px 11px rgb(193,193,193);
+  	box-shadow: 0 0px 11px rgb(193,193,193);
+	background-color: white;
+}
+
+#footerCont {
+	position: absolute;
+	display: inline-flex;
+	left: 0px;
+	bottom: 0px;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 100%;
+	height: 50px;
+	z-index: 1;
+	font-family: champ-b;
+	letter-spacing: 1.2px;
+	background-color: rgb(254, 254, 254);
+	white-space: nowrap;
+	box-shadow: 0px 5px 15px gray;
+}
+
+#footerLHS {
+	font-size: 16px;
+	padding-left: 50px;
+	color: rgb(142,142,142);
+}
+
+#footerRHS {
+	padding-right: 50px;
+	font-size: 16px;
+	color: rgb(165,165,165);
+	word-spacing: 4px;
+	line-height: 20px;
+	text-align: center;
+
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    height: 100%;
+}
+
+#footerRHS div {
+	height: auto;
+	margin: auto 0;
+}
+
+#footerTitle {
+	font-size: 18px;
+	/*line-height: 160%;*/
+	color: rgb(142,142,142);
+}
+
+#footerCont a {
+	padding: 0px 4px;
+}
+
+#footerLHS a {
+	color: gray;
+}
+
+#footerLHS a:hover {
+	font-weight: 300;
+}
+
+#footerLHS:hover .undSlide {
+	width: 97%;
+	height: 2px;
+}
+
+#footerLHS .desktopOnly {
+	display: inline-flex;
+}
+
+#repoClick {
+	display: inline-flex;
+}
+
+#homeBtn {
+	height: 100%;
+	width: auto;
+}
+
+#nomImg {
+    background: url('../header/images/nom.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 177px;
+    height: auto;
+    margin-left: 25px;
+}
+
+.headSigCont {
+	display: none;
+	position: relative;
+	height: 100%;
+	align-items: center;
+	flex-direction: column;
+	margin-left: 30px; 
+}
+
+.headSigMF {
+	flex-direction: column;
+	height: 75px;
+	align-self: center;
+	line-height: 41px;
+
+	white-space: nowrap;
+	word-spacing: 16px;
+}
+
+.Name1 {
+	position: absolute;
+	color: rgb(188,188,188);
+	font-size: 55px;
+	top: -3px;
+	left: -5px;
+	z-index: 0;
+	letter-spacing: 1px;
+}
+
+.Name2 {
+	position: absolute;
+	color: rgb(80,80,80);
+	top: 37px;
+	opacity: 0.7;
+	left: 4px;
+	font-size: 70px;
+	z-index: 1;
+}
+
+#HSTCont {
+	position: absolute;
+	flex-direction: row;
+	width: 100%;
+	left: 165px;
+	top: 35px;
+	justify-content: space-between;
+}
+
+.headSigTitle {
+	font-size: 16px;
+	line-height: 100%;
+	vertical-align: middle;
+	justify-content: space-between;
+	color: black;
+	opacity: 0.3;
+	padding: 2px 0px 0px 5px;
+}
+
+#hbgrCont {
+	width: auto;
+	height: auto;
+	padding-right: 30px;
+}
+
+#hbgr {
+	position: relative;
+	justify-content: center;
+	flex-direction: column;
+	height: 50px;
+}
+
+.hbgrLine {
+	background: url('../header/images/hamburger_s.png') no-repeat;
+	width: 70px;
+	height: 17px;
+	transition: transform top bottom 0.3s;
+	transition-duration: 0.3s;
+	transition-delay: 0.3s;
+	transform-origin: left-center;
+}
+
+.openHam #hbgr1, .openHam #hbgr2, .openHam #hbgr3 {
+}
+
+#hbgr1 {
+	top: 0px;
+	position: absolute;
+}
+
+.openHam #hbgr1 {
+	transform: rotate(45deg);
+	top: 17px;
+}
+
+#hbgr2 {
+	align-self: center;
+}
+
+.openHam #hbgr2  {
+	opacity: 0;
+
+}
+
+#hbgr3 {
+	position: absolute;
+	bottom: 0px;
+}
+
+.openHam #hbgr3 {
+	transform: rotate(-45deg);
+	bottom: 17px;
+}
+
+
+#menuCont {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	z-index: -1;
+}
+
+#menuOv {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	left: 0px;
+	top: 0px;
+	transition: opacity 1s;
+}
+
+.openMenu #menuOv {
+	display: flex;
+	opacity: 0.4;
+}
+
+.closedMenu #menuOv {
+	opacity: 0;
+	display: flex;
+}
+
+.openMenu #menuCont {
+}
+
+#menu ul {
+	padding: 25px 25px;
+	list-style-type: none;
+	margin: 30px 0 0 0;
+}
+
+#menu h1 {
+	display: inline-block;
+	margin: 0;
+	width: auto;
+	padding: 30px 0px;
+	font-size: 50px;
+	line-height: 85%;
+}
+
+#menu {
+	position: absolute;
+	height: 100%;
+	width: 0px;
+	right: 0;
+	top: 100px;
+	background-color: white;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.openMenu #menu {
+	width: 600px;
+	transition: width 0.8s ease;
+}
+
+.closedMenu #menu {
+	transition: width 0.5s;	
+}
+
+.undSlide {
+	width: 0%;
+	height: 3px;
+	background-color: black;
+	transition: width 0.3s, background-color 1.8s;
+	-webkit-transition: width 0.3s, background-color 1.8s;
+    -moz-transition: width 0.3s, background-color 1.8s;
+    -o-transition: width 0.3s, background-color 1.8s;
+}
+
+#menu a:hover .undSlide, #menu h1:hover .undSlide {
+	width: 100%;
+}
+
+.hdrShow {
+	top: 0px;
+	transition-delay: 0s;
+	transition: top 0.3s;
+}
+
+.hdrHide {
+	top: -100px;
+	transition-delay: 0.1s;
+	transition: top 0.5s;
+}
+
+/*desktop only*/
+@media screen  and (orientation: landscape) {
+	.desktopOnly {
+		display: initial;
+	}
+
+	.mobileOnly {
+		display: none;
+	}
+}
+
+/*mobile*/
+@media screen and (max-width: 1300px) and (min-width: 801px) and (min-height: 1000px) and (orientation: portrait) {
+	h1 {
+		font-size: 80px !important;
+		height: auto;
+	}
+
+	#headerCont {
+		height: 150px;
+	}
+
+	.hdrHide {
+		top: -150px;
+	}
+
+	#nomImg {
+		width: 240px;
+	}
+
+	.desktopOnly {
+		display: none !important;
+	}
+
+	.mobileOnly {
+		display: initial;
+	}
+
+	#menu {
+		height: auto;
+		top: 150px;
+	}
+
+	#menu h1 {
+		margin: 0;
+	}
+
+	#menu h1 span {
+		height: 80px;
+	}
+
+	#menu ul {
+		padding: 50px 40px;
+	}
+
+	#menu li {
+		padding: 20px 0;
+	}
+
+	.openMenu #menu {
+		width: 80%;
+	}
+
+	.closedMenu #menu {
+	}
+
+	#footerCont {
+		height: 150px;
+	}
+
+	#footerCont div {
+		font-size: 38px;
+		line-height: 140%;
+		text-align: right;
+	}
+
+	#footerCont #footerLHS span {
+		width: 200px;
+		white-space: normal;
+	}
+
+	#footerRHS {
+		padding-right: 40px;
+	}
+
+	#footerCont a {
+		padding: 0px;
+	}
+
+}
