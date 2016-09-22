@@ -7,6 +7,12 @@ h1 {
 	text-transform: uppercase;
 	padding: 60px 0px;
 }
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
  #headerCont, #hbgr, #homeBtn, #footerCont, #footerRHS {
 	display: -webkit-box;
     display: -moz-box;
@@ -425,5 +431,4 @@ h1 {
 	#footerCont a {
 		padding: 0px;
 	}
-
 }
