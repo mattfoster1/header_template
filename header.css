@@ -36,7 +36,7 @@ h1 {
 
 #footerCont {
 	position: absolute;
-	display: inline-flex;
+	/*display: inline-flex;*/
 	left: 0px;
 	bottom: 0px;
 	align-items: center;
@@ -410,7 +410,8 @@ h1 {
 	}
 
 	#footerRHS {
-		padding-right: 40px;
+		padding-right: 60px;
+		width: auto;
 	}
 
 	#footerCont a {
