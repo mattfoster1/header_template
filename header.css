@@ -349,6 +349,7 @@ a {
 
 /*mobile*/
 @media screen and (max-width: 1300px) and (min-width: 801px) and (min-height: 1000px) and (orientation: portrait) {
+/*@media screen and (max-width: 800px) and (min-height: 601px) {*/
 	h1 {
 		font-size: 80px !important;
 		height: auto;
@@ -393,6 +394,10 @@ a {
 
 	#menu li {
 		padding: 20px 0;
+	}
+
+	#menu .undSlide {
+		width: 100%;
 	}
 
 	.openMenu #menu {
